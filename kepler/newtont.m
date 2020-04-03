@@ -4,7 +4,7 @@
 % nmax:     the number of allowed iterations
 % etol:     the error tolerance
 % t:        time 
-function [r] = newton(f, df, x0, nmax, etol, t)
+function [r] = newtont(f, df, x0, nmax, etol, t)
     r = x0;
     for i=1:nmax
         fr = feval(f, r) - t;
