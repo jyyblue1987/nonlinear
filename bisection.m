@@ -23,9 +23,6 @@ end
 
 fprintf(' Bisection Method: initial |(b-a)/2| = %g\n',(b-a)/2);
 
-c = (a+b)/2;
-fc = feval(Ffun,c);
-
 for i=1:maxit
 
    c = (a+b)/2;
