@@ -1,0 +1,5 @@
+% r 
+function [r] = newton(f, df, x0, nmax, etol, ishow)
+    
+end
+
