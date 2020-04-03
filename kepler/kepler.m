@@ -40,12 +40,15 @@ figure
 
 subplot(2,2,1)
 plot(tt, x);
+title('x(t) vs t')
 
 subplot(2,2,2)
 plot(tt, y);
+title('y(t) vs t')
 
 subplot(2,2,3)
 plot(x, y);
+title('x(t) vs y(t)')
 
 
 
