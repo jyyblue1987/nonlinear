@@ -14,7 +14,7 @@ x = 0:0.001:10;
 y = 0:0.001:10;
 i = 1;
 for t = 0:0.001:10
-    w = newton('f3', 'Df3', x0, maxit, etol, t);
+    w = newtont('f3', 'Df3', x0, maxit, etol, t);
     fprintf('t = %0.7f, w(t) = %0.7f\n', t, w);  
     
     % radial position of an object at angle ! in it’s elliptical orbit, 
