@@ -12,7 +12,7 @@ for i = 1:4
     for j =1:2        
         etol = tol_array(j);
         r = newton('f2', 'Df2', x0, maxit, etol, true);
-        fprintf('\n Initial guest = %d, tol = %.16e,  The approximate root is %.16e \n\n', x0, etol, r);
+        fprintf('Initial guest = %d, tol = %.16e,  The approximate root is %.16e \n\n', x0, etol, r);
     end
 end
 

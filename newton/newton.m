@@ -9,11 +9,18 @@ function [r] = newton(f, df, x0, nmax, etol, ishow)
     for i=1:nmax
         fr = feval(f, r);
         frd = feval(df, r);
+        
+        % err = f(r) / f'(r)
         err = fr / frd;
+        
+        if ishow
+            fprintf('   iter %6i, r = %0.7f, f(r) = %0.7f, err = %0.7f\n', i, r, fr, err);
+        end
         if abs(err) < etol 
             break;
         end
         
+        % x(k + 1) = x(k) - f(x(k))/f'(x(k))
         r = r - err;
     end
 end
